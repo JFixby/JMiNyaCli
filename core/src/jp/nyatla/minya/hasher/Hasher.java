@@ -1,4 +1,26 @@
-package org.litecoinpool.miner;
+/*
+ * Hasher.
+ * Original source code by pooler
+ * https://github.com/pooler/JMiner
+ * Copyright 2011 LitecoinPool.org
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License, version 2, as
+ * published by the Free Software Foundation.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+ */
+/*
+ * Minya project
+ * Copyright 2014 nyatla.jp
+ */
+package jp.nyatla.minya.hasher;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import java.security.GeneralSecurityException;
@@ -6,7 +28,8 @@ import java.security.GeneralSecurityException;
 import static java.lang.System.arraycopy;
 import static java.lang.Integer.rotateLeft;
 
-public class Hasher {
+public class Hasher
+{
 	
 	private Mac mac;
     private byte[] H = new byte[32];
@@ -17,19 +40,15 @@ public class Hasher {
     public Hasher() throws GeneralSecurityException {
 	    mac = Mac.getInstance("HmacSHA256");
 	}
-    
-    public byte[] hash(byte[] header) throws GeneralSecurityException {
-    	return hash(header, header[76] | header[77] << 8 | header[78] << 16 | header[79] << 24);
-    }
-    
-    public byte[] hash(byte[] header, int nonce) throws GeneralSecurityException {
+    public byte[] hash(byte[] header, int nonce) throws GeneralSecurityException
+    {
         int i, j, k;
 
         arraycopy(header, 0, B, 0, 76);
-        B[76] = (byte) (nonce >>  0);
-        B[77] = (byte) (nonce >>  8);
-        B[78] = (byte) (nonce >> 16);
-        B[79] = (byte) (nonce >> 24);
+        B[76] = (byte) (nonce >> 24);
+        B[77] = (byte) (nonce >> 16);
+        B[78] = (byte) (nonce >>  8);
+        B[79] = (byte) (nonce >>  0);
         mac.init(new SecretKeySpec(B, 0, 80, "HmacSHA256"));
     	B[80] = 0;
     	B[81] = 0;
@@ -126,5 +145,4 @@ public class Hasher {
         X[di + 14] += x14;
         X[di + 15] += x15;
     }
-
 }

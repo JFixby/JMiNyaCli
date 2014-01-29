@@ -119,7 +119,8 @@ public class Worker extends Observable implements Runnable {
 		notifyObservers(Notification.TERMINATED);
 	}
 	
-	private synchronized Work getWork() {
+	private synchronized Work getWork()
+	{
 		while (running) {
 			try {
 				return new Work(url, auth);
