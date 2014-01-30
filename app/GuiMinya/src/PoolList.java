@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class PoolList
 {
-	public class Item{
+	public static class Item{
 		public String currency_name;
 		public String pool_name;
 		public String url;
@@ -15,6 +15,11 @@ public class PoolList
 		}
 	}
 	final static private String[][] preset={
+		{
+			"(manual)",
+			null,
+			null
+		},
 		{
 			"MONA",
 			"2chpool",
@@ -31,6 +36,16 @@ public class PoolList
 			"stratum+tcp://server.domain.com:4444",
 		},
 		{
+			"NYAN",
+			"NyanCoin pool - moonishere.com",
+			"stratum+tcp://moonishere.com:3333"
+		},
+		{
+			"NYAN",
+			"NyanCoin pool - HappyMiners.net",
+			"stratum+tcp://s1.happyminers.net:1337"
+		},
+		{
 			"LTC",
 			"WEMINELTC.COM(CPU)",
 			"stratum+tcp://freedom.wemineltc.com:3339"
@@ -39,19 +54,15 @@ public class PoolList
 			"BEER",
 			"beer.coinmining.pw",
 			"stratum+tcp://stratum.coinmining.pw:3339"
-		},
-		{
-			"NYAN",
-			"NyanCoin pool - HappyMiners.net",
-			"stratum+tcp://s1.happyminers.net:1337"
 		}
 	};
-	ArrayList<Item> _list=new ArrayList<Item>();
-	public PoolList()
+	public static ArrayList<Item> getPoolList()
 	{
+		ArrayList<Item> list=new ArrayList<Item>();
 		for(int i=0;i<preset.length;i++){
-			this._list.add(new Item(preset[i][0],preset[i][1],preset[i][2]));
+			list.add(new Item(preset[i][0],preset[i][1],preset[i][2]));
 		}
+		return list;
 	}
 
 }
