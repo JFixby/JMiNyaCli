@@ -1,6 +1,7 @@
 JMiNya
 =========
 https://github.com/nyatla/JMiNya/
+
 Copyright (C)2014 nyatla.jp
 
 
@@ -14,7 +15,7 @@ GUI application and hashing library.
 It can  mining on any stratum+tcp server.
 JMiNya use JMiner's hashing implementation and part of source code.
 
-It contains the hasher by pooler/JMiner.
+It based on JMiner litecoin miner by pooler/JMiner.
 https://bitcointalk.org/index.php?topic=52386.0
 
 
