@@ -1,7 +1,8 @@
 JMiNya
 =========
-project page: https://github.com/nyatla/JMiNya/
+project page: https://github.com/nyatla/JMiNya/<br/>
 blog: http://nyatla.hatenadiary.jp/
+
 Copyright (C)2014 nyatla.jp
 
 
