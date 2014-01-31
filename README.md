@@ -9,20 +9,18 @@ Copyright (C)2014 nyatla.jp
 
  What is this?
 ----------------------------------------------------------------------
-A pure-Java sCrypt coin miner for tcp+strutum mining pool.
+A pure-Java sCrypt coin miner for tcp+strutum mining pool.<br/>
 GUI application and hashing library.
 
 It can  mining on any stratum+tcp server.
 JMiNya use JMiner's hashing implementation and part of source code.
 
 
-It based on JMiner litecoin miner by pooler/JMiner.
-
+It based on JMiner litecoin miner by pooler/JMiner.<br/>
 https://bitcointalk.org/index.php?topic=52386.0
 
 
-日本語のマニュアルはこちらをご覧ください。
-
+日本語のマニュアルはこちらをご覧ください。<br/>
 https://github.com/nyatla/JMiNya/release/readme.ja.txt
 
 
@@ -30,17 +28,17 @@ https://github.com/nyatla/JMiNya/release/readme.ja.txt
 Feature
 ----------------------------------------------------------------------
 
- - Have a GUI application.
+ - Have a GUI application.<br/>
 It has a simple GUI and easy setting.
-Some preset pools exist.(MONA/NYAN/LTC and BEER!)
+Some preset pools exist.(<a href="http://monacoin.org/ja/">MONA</a>/NYAN/LTC and BEER!)
 
- - Full Pure java implementation.
+ - Full Pure java implementation.<br/>
 It can run any machine.
 
- - Stratum+tcp server support.
+ - Stratum+tcp server support.<br/>
 It can mining on any stratum+tcp:// server!
   
- - Vely slow hash late.
+ - Vely slow hash late.<br/>
 This is pure java CPU miner that is very slow hasing.
 1kH/s -2kH/s per core.
 (I recommend cgminer or cudaminer if you have GPU.)
