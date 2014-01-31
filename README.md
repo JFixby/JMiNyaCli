@@ -1,3 +1,6 @@
+JMiNya
+=========
+
 A pure-Java sCrypt coin miner with strutum protocol.
 GUI application and hashing library.
 
