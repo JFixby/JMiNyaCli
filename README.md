@@ -9,23 +9,28 @@ Copyright (C)2014 nyatla.jp
 
  What is this?
 ----------------------------------------------------------------------
-A pure-Java sCrypt coin miner for strutum protocol mining pool.
+A pure-Java sCrypt coin miner for tcp+strutum mining pool.
 GUI application and hashing library.
 
 It can  mining on any stratum+tcp server.
 JMiNya use JMiner's hashing implementation and part of source code.
 
+
 It based on JMiner litecoin miner by pooler/JMiner.
+
 https://bitcointalk.org/index.php?topic=52386.0
 
 
-日本語のマニュアルは
+日本語のマニュアルはこちらをご覧ください。
+
 https://github.com/nyatla/JMiNya/release/readme.ja.txt
 
- Feature
+
+
+Feature
 ----------------------------------------------------------------------
 
- - Have a GUI.
+ - Have a GUI application.
 It has a simple GUI and easy setting.
 Some preset pools exist.(MONA/NYAN/LTC and BEER!)
 
@@ -43,7 +48,7 @@ This is pure java CPU miner that is very slow hasing.
 How to Use
 ----------------------------------------------------------------------
 
-1. Start jminya.jar. for windows, click .bat file.
+1. Start jminya.jar in release directory. for windows, click .bat file.
 2. After window opened, set mining parameters.
     - Stratum Server address
      - MiningPool - Select manual or preseted pools.
