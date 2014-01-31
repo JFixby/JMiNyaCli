@@ -73,17 +73,3 @@ If you like it, please donate coins.
     BEER:56fqErAcHTvMHwLBRHiKKJAmAJB2GGJ7c3
     LTC :LaSWCtBGTxWdxNJWS17AUw9eYRS9JHnFin
 
-
-Special thanks
-----------------------------------------------------------------------
-
-  Satoshi Nakamoto-san
-    Thank you for bitcoin dream.
-
-  pooler-san
-    Thank you for reference implementation of Java scrypt hasher.
-    https://github.com/pooler/JMiner
-
-  Slush's pool
-    Thank you for stratum-protocol reference.
-    http://mining.bitcoin.cz/stratum-mining
