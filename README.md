@@ -21,7 +21,7 @@ https://bitcointalk.org/index.php?topic=52386.0
 
 
 日本語のマニュアルはこちらをご覧ください。<br/>
-https://github.com/nyatla/JMiNya/release/readme.ja.txt
+https://github.com/nyatla/JMiNya/blob/master/release/readme.ja.txt
 
 
 
