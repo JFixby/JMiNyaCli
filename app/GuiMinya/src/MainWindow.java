@@ -96,7 +96,7 @@ public class MainWindow
 			public void run() {
 				try {
 					MainWindow window = new MainWindow();
-					window.frmMinyagui.setVisible(true);
+					//window.frmMinyagui.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -110,8 +110,9 @@ public class MainWindow
 	 */
 	public MainWindow()
 	{
-		initialize();
-		this._application=new App(this);
+		//initialize();
+		this._application=new App();
+		this._application.onStartClick();
 	}
 
 	/**
