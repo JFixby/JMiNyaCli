@@ -4,5 +4,9 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="extlib/jackson/jackson-all-1.9.11.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/scarabei-api"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/scarabei-api-desktop"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/scarabei-red"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/scarabei-red-desktop"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
